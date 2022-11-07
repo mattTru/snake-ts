@@ -1,0 +1,5 @@
+# IDE
+.idea
+
+# packages
+node_modules
