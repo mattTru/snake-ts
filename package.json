@@ -2,18 +2,18 @@
   "name": "snake-ts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rimraf ./build && tsc"
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {},
   "devDependencies": {
-    "@types/node": "^18.11.9",
-    "rimraf": "^3.0.2",
-    "ts-node": "^10.9.1",
+    "parcel-bundler": "^1.12.5",
     "typescript": "^4.8.4"
   }
 }
