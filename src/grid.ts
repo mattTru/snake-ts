@@ -1,4 +1,5 @@
-export interface Grid {
-    x: number;
-    y: number;
-}
+export class Grid {
+    public generate(): void {
+        alert('Initialisation de la partie');
+    }
+} 
