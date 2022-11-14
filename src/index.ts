@@ -6,7 +6,11 @@ const g: Grid = {
 }
 
 function init() {
-    console.log(g);
+    alert('Dimension de la grille: ' + g.x + ' sur ' + g.y);
 }
 
-init();
+const initButton = document.getElementById('init');
+
+initButton?.addEventListener('click', function handleClick(event) {
+    init();
+})
