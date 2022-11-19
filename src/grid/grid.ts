@@ -5,14 +5,15 @@ export class Grid {
         canvas.width = Dimension.grid.width;
         canvas.height = Dimension.grid.height;
         canvas.style.display = 'block';
-        for (let x = 0; x < Dimension.grid.width; x++) {
-            for (let y = 0; y < Dimension.grid.height; y++) {
-                context.fillStyle = 'white';
-                context.fillRect(Dimension.grid.box * x, Dimension.grid.box * y, Dimension.grid.box, Dimension.grid.box);
-                
-                context.strokeStyle = "lightgray";
-                context.strokeRect(Dimension.grid.box * x, Dimension.grid.box * y, Dimension.grid.box, Dimension.grid.box);
-            }
-        }
+    }
+
+    public generate(context: CanvasRenderingContext2D, snake: { x: number; y: number; }[]) {
+        context.clearRect(0, 0, Dimension.grid.width, Dimension.grid.height);
+        snake.forEach((item, index) => {
+            context.fillStyle = 'red';
+            context.beginPath();
+            context.rect(item.x, item.y, Dimension.grid.boxSize, Dimension.grid.boxSize);
+            context.fill();
+        })
     }
 } 
