@@ -1,9 +1,9 @@
-import { Grid } from "./grid/grid";
+import { Game } from "./game";
 
 const initButton = document.getElementById('init');
 
 initButton?.addEventListener('click', function handleClick(event) {
-    new Grid().init();
+    new Game().start();
 
     initButton.style.display = 'none';
 })

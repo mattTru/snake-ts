@@ -1,4 +1,4 @@
-#grid canvas {
-    margin-top: 10px;
+canvas {
+    display: none;
     border: 2px solid gray;
 }

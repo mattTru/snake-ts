@@ -1,6 +1,7 @@
 export const Dimension = Object.freeze({
     grid: {
-        size: 50,
-        box: 15
+        width: 750,
+        height: 750,
+        box: 10
     }
 })
