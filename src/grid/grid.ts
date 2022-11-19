@@ -22,7 +22,7 @@ export class Grid {
                 box.fillStyle = 'white';
                 box.fillRect(Dimension.grid.box * x, Dimension.grid.box * y, Dimension.grid.box, Dimension.grid.box);
 
-                box.strokeStyle = "rgb(75, 75, 75)";
+                box.strokeStyle = "lightgray";
                 box.strokeRect(Dimension.grid.box * x, Dimension.grid.box * y, Dimension.grid.box, Dimension.grid.box);
             }
         }
