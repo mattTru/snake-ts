@@ -51,7 +51,7 @@ export class Game {
 
         setTimeout(() => {
             this.move();
-        }, 50);
+        }, 100);
     }
 }
 
